@@ -19,22 +19,80 @@
 
 // Type coercion
 
-var firstName = 'John';
-var age = 28;
+// var firstName = 'John';
+// var age = 28;
+//
+// console.log(firstName + ' ' + age);
+//
+// var job, isMarried;
+// job = 'teacher';
+// isMarried = false;
+//
+// console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+//
+// // Variable mutation
+// age = 'twenty eight';
+// job = 'driver';
+//
+// alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+//
+// var lastName = prompt('What is his last name?');
+// console.log(firstName + ' ' + lastName);
 
-console.log(firstName + ' ' + age);
+/****************************************
+* Basic operators
+*/
 
-var job, isMarried;
-job = 'teacher';
-isMarried = false;
+// Logical operators
+// var ageJohn = 28;
+// var ageMark = 33;
+//
+// var johnOlder = ageJohn < ageMark;
+//
+// console.log(johnOlder);
+//
+// // typeof operator
+// console.log(typeof johnOlder);
+// console.log(typeof ageJohn);
+// console.log(typeof 'Mark is older than John');
+// var x;
+// console.log(typeof x);
 
-console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+/********************
+* Operator Precedence
+*/
 
-// Variable mutation
-age = 'twenty eight';
-job = 'driver';
 
-alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+/*****************************
+* CODING CHALLENGE 1
+*/
 
-var lastName = prompt('What is his last name?');
-console.log(firstName + ' ' + lastName);
+/*
+Mark and John are trying to compare their BMI (Body Mass Index),
+which is calculated using the formula:
+BMI = mass / height^2 = mass / (height * height).
+(mass in kg and height in meter).
+
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs
+3. Create a boolean variable containing information about whether
+Mark has a higher BMI than John.
+4. Print a string to the console containing the variable from step 3.
+(Something like "Is Mark's BMI higher than John's? true").
+
+GOOD LUCK 😀
+*/
+
+var massMark = 78; // kg
+var heightMark = 1.69; // meters
+
+var massJohn = 92;
+var heightJohn = 1.95;
+
+var markBMI, johnBMI;
+markBMI = massMark / (heightMark * heightMark);
+johnBMI = massJohn / (heightJohn * heightJohn);
+
+var markHigherBMI = markBMI > johnBMI;
+console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
+console.log(markBMI, johnBMI);

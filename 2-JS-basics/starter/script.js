@@ -199,32 +199,70 @@ and height in meter).
 GOOD LUCK 😀
 */
 
-var john = {
-  firstName: 'John',
-  lastName: 'Smith',
-  mass: 92,
-  height: 1.95,
-  calcBMI: function(){
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  }
-};
+// var john = {
+//   firstName: 'John',
+//   lastName: 'Smith',
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function(){
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   }
+// };
+//
+// var mark = {
+//   firstName: 'Mark',
+//   lastName: 'Jones',
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function(){
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   }
+// };
+//
+// if (mark.calcBMI() > john.calcBMI()) {
+//   console.log(mark.firstName + ' ' + mark.lastName + ' has the bigger BMI of ' + mark.bmi);
+// } else if (john.bmi > mark.bmi) {
+//   console.log(john.firstName + ' ' + john.lastName + ' has the bigger BMI of ' + john.bmi);
+// } else {
+//   console.log(john.firstName + ' ' + john.lastName + ' has the same BMI of ' + john.bmi + ' as ' + mark.firstName + ' ' + mark.lastName);
+// }
 
-var mark = {
-  firstName: 'Mark',
-  lastName: 'Jones',
-  mass: 78,
-  height: 1.69,
-  calcBMI: function(){
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  }
-};
+/*******************************
+* Loops and iteration
+*/
 
-if (mark.calcBMI() > john.calcBMI()) {
-  console.log(mark.firstName + ' ' + mark.lastName + ' has the bigger BMI of ' + mark.bmi);
-} else if (john.bmi > mark.bmi) {
-  console.log(john.firstName + ' ' + john.lastName + ' has the bigger BMI of ' + john.bmi);
-} else {
-  console.log(john.firstName + ' ' + john.lastName + ' has the same BMI of ' + john.bmi + ' as ' + mark.firstName + ' ' + mark.lastName);
+// For Loop
+/*for (var i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+for (var i = 0; i < john.length; i++) {
+  console.log(john[i]);
+}
+
+// While Loop
+var i = 0;
+while (i < john.length) {
+  console.log(john[i]);
+  i++;
+}*/
+
+// Continue and break statements
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+for (var i = 0; i < john.length; i++) {
+  if (typeof john[i] !== 'string') continue;
+  console.log(john[i]);
+}
+
+for (var i = 0; i < john.length; i++) {
+  if (typeof john[i] !== 'string') break;
+  console.log(john[i]);
+}
+
+// Reverse order
+for (var i = john.length - 1; i >= 0; i--) {
+  console.log(john[i]);
 }

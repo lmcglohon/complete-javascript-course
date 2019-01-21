@@ -101,34 +101,31 @@ GOOD LUCK 😀
 * If / else statements
 */
 
-var firstName = 'John';
-var civilStatus = 'single';
 
-if (civilStatus === 'married') {
-  console.log(firstName + ' is married!');
-} else {
-  console.log(firstName + ' is not married!');
+/*****************************
+* Functions
+*/
+
+
+/*********************************
+* Function Statements and Expressions
+*/
+
+// Function declaration
+// function whatDoYouDo(job, firstName){}
+
+// Function expression
+var whatDoYouDo = function(job, firstName){
+  switch(job){
+    case 'teacher':
+      return firstName + ' teaches kids how to code';
+    case 'driver':
+      return firstName + ' drives an Uber';
+    case 'designer':
+      return firstName + ' designs websites';
+    default:
+      return firstName + ' does something else';
+  }
 }
 
-var isMarried = true;
-if (isMarried) {
-  console.log(firstName + ' is married!');
-} else {
-  console.log(firstName + ' is not married!');
-}
-
-var massMark = 78; // kg
-var heightMark = 1.69; // meters
-
-var massJohn = 150;
-var heightJohn = 1.95;
-
-var markBMI, johnBMI;
-markBMI = massMark / (heightMark * heightMark);
-johnBMI = massJohn / (heightJohn * heightJohn);
-
-if (markBMI > johnBMI) {
-  console.log('Mark\'s BMI is higher than John\'s.')
-} else {
-  console.log('John\'s BMI is higher than Mark\'s.')
-}
+console.log(whatDoYouDo('driver', 'John'));

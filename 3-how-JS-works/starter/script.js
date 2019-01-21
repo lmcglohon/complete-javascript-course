@@ -34,7 +34,7 @@ console.log(age);*/
 
 // First scoping example
 
-var a = 'Hello!';
+/*var a = 'Hello!';
 first();
 
 function first() {
@@ -45,11 +45,11 @@ function first() {
         var c = 'Hey!';
         console.log(a + b + c);
     }
-}
+}*/
 
 // Example to show the differece between execution stack and scope chain
 
-/*var a = 'Hello!';
+var a = 'Hello!';
 first();
 
 function first() {
@@ -66,7 +66,7 @@ function third() {
     var d = 'John';
     console.log(a + d);
 //    console.log(a + b + c + d);
-}*/
+}
 
 ///////////////////////////////////////
 // Lecture: The this keyword
